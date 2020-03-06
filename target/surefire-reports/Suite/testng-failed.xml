@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test verbose="0" name="Test(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.tricentis.automation.scripts.fieldVerification.HomePageTests">
+        <methods>
+          <include name="verifyMotorCyclelink"/>
+          <include name="suiteInitializer"/>
+          <include name="verifyAutomationlink"/>
+          <include name="verifyTrucklink"/>
+          <include name="initialize"/>
+          <include name="verifyCamperlink"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.tricentis.automation.scripts.fieldVerification.HomePageTests -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

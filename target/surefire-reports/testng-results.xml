@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="35989" started-at="2020-03-06T17:09:48Z" finished-at="2020-03-06T17:10:24Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="35989" started-at="2020-03-06T17:09:48Z" finished-at="2020-03-06T17:10:24Z">
+      <class name="com.tricentis.automation.scripts.fieldVerification.HomePageTests">
+        <test-method status="PASS" signature="suiteInitializer()[pri:0, instance:com.tricentis.automation.scripts.fieldVerification.HomePageTests@3a03464]" name="suiteInitializer" is-config="true" duration-ms="97" started-at="2020-03-06T22:39:48Z" finished-at="2020-03-06T22:39:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteInitializer -->
+        <test-method status="PASS" signature="initialize(java.lang.String)[pri:0, instance:com.tricentis.automation.scripts.fieldVerification.HomePageTests@3a03464]" name="initialize" is-config="true" duration-ms="19257" started-at="2020-03-06T22:39:48Z" finished-at="2020-03-06T22:40:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="verifyAutomationlink()[pri:0, instance:com.tricentis.automation.scripts.fieldVerification.HomePageTests@3a03464]" name="verifyAutomationlink" duration-ms="14497" started-at="2020-03-06T22:40:07Z" finished-at="2020-03-06T22:40:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAutomationlink -->
+        <test-method status="PASS" signature="verifyCamperlink()[pri:0, instance:com.tricentis.automation.scripts.fieldVerification.HomePageTests@3a03464]" name="verifyCamperlink" duration-ms="1" started-at="2020-03-06T22:40:22Z" finished-at="2020-03-06T22:40:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCamperlink -->
+        <test-method status="PASS" signature="verifyMotorCyclelink()[pri:0, instance:com.tricentis.automation.scripts.fieldVerification.HomePageTests@3a03464]" name="verifyMotorCyclelink" duration-ms="0" started-at="2020-03-06T22:40:22Z" finished-at="2020-03-06T22:40:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMotorCyclelink -->
+        <test-method status="PASS" signature="verifyTrucklink()[pri:0, instance:com.tricentis.automation.scripts.fieldVerification.HomePageTests@3a03464]" name="verifyTrucklink" duration-ms="0" started-at="2020-03-06T22:40:22Z" finished-at="2020-03-06T22:40:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTrucklink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tricentis.automation.scripts.fieldVerification.HomePageTests@3a03464]" name="tearDown" is-config="true" duration-ms="2192" started-at="2020-03-06T22:40:22Z" finished-at="2020-03-06T22:40:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tricentis.automation.scripts.fieldVerification.HomePageTests -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
