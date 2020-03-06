@@ -35,7 +35,7 @@ public class HomePageTests extends Driver{
 	@Test
 	public void verifyMotorCyclelink()
 	{
-		
+		System.out.println("verify MotorCycle Link");	
 	}
 	
 	@Test
