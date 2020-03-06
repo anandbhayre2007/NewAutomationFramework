@@ -29,7 +29,7 @@ public class HomePageTests extends Driver{
 	@Test
 	public void verifyTrucklink()
 	{
-		
+		System.out.println("verify Truck Link");
 	}
 	
 	@Test
