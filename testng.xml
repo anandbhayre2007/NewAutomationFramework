@@ -5,7 +5,7 @@
   <parameter name="browser" value="Chrome"></parameter>
     <classes>
       <class name="com.tricentis.automation.scripts.fieldVerification.HomePageTests"/>
-      <!-- <class name="com.tricentis.automation.scripts.fieldVerification.Automobile_EnterVehicleDataPageTests"/> -->
+      <class name="com.tricentis.automation.scripts.fieldVerification.Automobile_EnterVehicleDataPageTests"/>
     </classes>
   </test> <!-- Test -->
   
