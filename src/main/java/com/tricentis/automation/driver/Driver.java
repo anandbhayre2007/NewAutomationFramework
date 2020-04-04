@@ -35,8 +35,7 @@ public class Driver {
 		if (browser.equalsIgnoreCase("Chrome")) {
 			System.setProperty("webdriver.chrome.driver", Config.browserPath + "chromedriver.exe");
 			ChromeOptions op = new ChromeOptions();
-			op.addArguments("--disable-infobars");
-			op.addArguments("--start-maximized");			
+			op.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"}); 					
 			dr = new ChromeDriver(op);
 			dr.manage().timeouts().implicitlyWait(Config.implicitWait, TimeUnit.SECONDS);
 			dr.get(Config.url);
@@ -68,7 +67,7 @@ public class Driver {
 	@AfterClass
 	public void tearDown()
 	{
-		dr.quit();
+		//dr.quit();
 	}
 
 }

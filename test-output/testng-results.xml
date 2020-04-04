@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="1" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="32528" started-at="2020-03-06T10:47:57Z" finished-at="2020-03-06T10:48:29Z">
+  <suite name="Suite" duration-ms="32157" started-at="2020-03-10T06:58:03Z" finished-at="2020-03-10T06:58:35Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="32528" started-at="2020-03-06T10:47:57Z" finished-at="2020-03-06T10:48:29Z">
+    <test name="Test" duration-ms="32157" started-at="2020-03-10T06:58:03Z" finished-at="2020-03-10T06:58:35Z">
       <class name="com.tricentis.automation.scripts.fieldVerification.HomePageTests">
-        <test-method status="PASS" signature="suiteInitializer()[pri:0, instance:com.tricentis.automation.scripts.fieldVerification.HomePageTests@66a3ffec]" name="suiteInitializer" is-config="true" duration-ms="32" started-at="2020-03-06T16:17:57Z" finished-at="2020-03-06T16:17:57Z">
+        <test-method status="PASS" signature="suiteInitializer()[pri:0, instance:com.tricentis.automation.scripts.fieldVerification.HomePageTests@77caeb3e]" name="suiteInitializer" is-config="true" duration-ms="32" started-at="2020-03-10T12:28:03Z" finished-at="2020-03-10T12:28:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteInitializer -->
-        <test-method status="PASS" signature="initialize(java.lang.String)[pri:0, instance:com.tricentis.automation.scripts.fieldVerification.HomePageTests@66a3ffec]" name="initialize" is-config="true" duration-ms="27202" started-at="2020-03-06T16:17:57Z" finished-at="2020-03-06T16:18:24Z">
+        <test-method status="PASS" signature="initialize(java.lang.String)[pri:0, instance:com.tricentis.automation.scripts.fieldVerification.HomePageTests@77caeb3e]" name="initialize" is-config="true" duration-ms="13849" started-at="2020-03-10T12:28:03Z" finished-at="2020-03-10T12:28:17Z">
           <params>
             <param index="0">
               <value>
@@ -22,27 +22,48 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="verifyAutomationlink()[pri:0, instance:com.tricentis.automation.scripts.fieldVerification.HomePageTests@66a3ffec]" name="verifyAutomationlink" duration-ms="3702" started-at="2020-03-06T16:18:24Z" finished-at="2020-03-06T16:18:28Z">
+        <test-method status="PASS" signature="verifyAutomationlink()[pri:0, instance:com.tricentis.automation.scripts.fieldVerification.HomePageTests@77caeb3e]" name="verifyAutomationlink" duration-ms="2183" started-at="2020-03-10T12:28:17Z" finished-at="2020-03-10T12:28:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAutomationlink -->
-        <test-method status="PASS" signature="verifyCamperlink()[pri:0, instance:com.tricentis.automation.scripts.fieldVerification.HomePageTests@66a3ffec]" name="verifyCamperlink" duration-ms="4" started-at="2020-03-06T16:18:28Z" finished-at="2020-03-06T16:18:28Z">
+        <test-method status="PASS" signature="verifyCamperlink()[pri:0, instance:com.tricentis.automation.scripts.fieldVerification.HomePageTests@77caeb3e]" name="verifyCamperlink" duration-ms="2" started-at="2020-03-10T12:28:19Z" finished-at="2020-03-10T12:28:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCamperlink -->
-        <test-method status="PASS" signature="verifyMotorCyclelink()[pri:0, instance:com.tricentis.automation.scripts.fieldVerification.HomePageTests@66a3ffec]" name="verifyMotorCyclelink" duration-ms="4" started-at="2020-03-06T16:18:28Z" finished-at="2020-03-06T16:18:28Z">
+        <test-method status="PASS" signature="verifyMotorCyclelink()[pri:0, instance:com.tricentis.automation.scripts.fieldVerification.HomePageTests@77caeb3e]" name="verifyMotorCyclelink" duration-ms="14" started-at="2020-03-10T12:28:19Z" finished-at="2020-03-10T12:28:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMotorCyclelink -->
-        <test-method status="PASS" signature="verifyTrucklink()[pri:0, instance:com.tricentis.automation.scripts.fieldVerification.HomePageTests@66a3ffec]" name="verifyTrucklink" duration-ms="3" started-at="2020-03-06T16:18:28Z" finished-at="2020-03-06T16:18:28Z">
+        <test-method status="PASS" signature="verifyTrucklink()[pri:0, instance:com.tricentis.automation.scripts.fieldVerification.HomePageTests@77caeb3e]" name="verifyTrucklink" duration-ms="6" started-at="2020-03-10T12:28:19Z" finished-at="2020-03-10T12:28:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTrucklink -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tricentis.automation.scripts.fieldVerification.HomePageTests@66a3ffec]" name="tearDown" is-config="true" duration-ms="1522" started-at="2020-03-06T16:18:28Z" finished-at="2020-03-06T16:18:29Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tricentis.automation.scripts.fieldVerification.HomePageTests@77caeb3e]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-03-10T12:28:19Z" finished-at="2020-03-10T12:28:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tricentis.automation.scripts.fieldVerification.HomePageTests -->
+      <class name="com.tricentis.automation.scripts.fieldVerification.Automobile_EnterVehicleDataPageTests">
+        <test-method status="PASS" signature="initialize(java.lang.String)[pri:0, instance:com.tricentis.automation.scripts.fieldVerification.Automobile_EnterVehicleDataPageTests@1e88b3c]" name="initialize" is-config="true" duration-ms="13078" started-at="2020-03-10T12:28:19Z" finished-at="2020-03-10T12:28:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="verifyEnginePerformanceInputbox()[pri:0, instance:com.tricentis.automation.scripts.fieldVerification.Automobile_EnterVehicleDataPageTests@1e88b3c]" name="verifyEnginePerformanceInputbox" duration-ms="2958" started-at="2020-03-10T12:28:32Z" finished-at="2020-03-10T12:28:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEnginePerformanceInputbox -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tricentis.automation.scripts.fieldVerification.Automobile_EnterVehicleDataPageTests@1e88b3c]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-03-10T12:28:35Z" finished-at="2020-03-10T12:28:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tricentis.automation.scripts.fieldVerification.Automobile_EnterVehicleDataPageTests -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
