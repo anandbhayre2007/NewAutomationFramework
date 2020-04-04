@@ -10,39 +10,39 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
 import com.tricentis.automation.configuration.Config;
 import com.tricentis.automation.libraries.Xls_ReaderForXLSX;
+import com.tricentis.automation.libraries.ZipUtility;
 
 public class Driver {
 	public WebDriver dr;
 	public static Xls_ReaderForXLSX xl;
-	
+
 	@BeforeSuite
-	public void suiteInitializer()
-	{
-		xl=new Xls_ReaderForXLSX(Config.testDataPath);
+	public void suiteInitializer() {
+		xl = new Xls_ReaderForXLSX(Config.testDataPath);
 	}
-	
+
 	@BeforeClass
-	@Parameters({"browser"})
-	public void initialize(String browser)
-	{
-		
+	@Parameters({ "browser" })
+	public void initialize(String browser) {
+
 		if (browser.equalsIgnoreCase("Chrome")) {
 			System.setProperty("webdriver.chrome.driver", Config.browserPath + "chromedriver.exe");
 			ChromeOptions op = new ChromeOptions();
-			op.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"}); 					
+			op.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" });
 			dr = new ChromeDriver(op);
 			dr.manage().timeouts().implicitlyWait(Config.implicitWait, TimeUnit.SECONDS);
 			dr.get(Config.url);
 
 		} else if (browser.equalsIgnoreCase("Firefox")) {
 			System.setProperty("webdriver.gecko.driver", Config.browserPath + "geckodriver.exe");
-			
+
 			dr = new FirefoxDriver();
 			dr.manage().timeouts().implicitlyWait(Config.implicitWait, TimeUnit.SECONDS);
 			dr.get(Config.url);
@@ -59,15 +59,19 @@ public class Driver {
 			dr = new EdgeDriver();
 			dr.manage().timeouts().implicitlyWait(Config.implicitWait, TimeUnit.SECONDS);
 			dr.get(Config.url);
-		} 
+		}
 
 		dr.manage().window().maximize();
 	}
-	
+
 	@AfterClass
-	public void tearDown()
-	{
-		//dr.quit();
+	public void tearDown() {
+		dr.quit();
+	}
+
+	@AfterSuite
+	public void teardown() {		
+		ZipUtility.zipReport();
 	}
 
 }
