@@ -70,8 +70,10 @@ public class Driver {
 	}
 
 	@AfterSuite
-	public void teardown() {		
+	public void teardown() throws InterruptedException {		
 		ZipUtility.zipReport();
+		Thread.sleep(10000);
+		System.out.println("Testing Zip report");
 	}
 	
 	
