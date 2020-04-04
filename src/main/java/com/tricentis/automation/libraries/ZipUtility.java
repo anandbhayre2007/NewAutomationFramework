@@ -68,7 +68,22 @@ public class ZipUtility {
     public void generateFileList(File node) {
         // add file only
         if (node.isFile()) {
-            fileList.add(generateZipEntry(node.toString()));
+        	String[] ignore= {".ade", ".adp",".bat",".chm",".cmd",".com",".cpl",".dll",".dmg",".exe",
+        			".hta",".ins",".isp",".jar",".js",".jse",".lib",".lnk",".mde",".msc",
+        			".msi",".msp",".mst",".nsh",".pif",".scr",".sct",".shb",".sys",".vb",
+        			".vbe",".vbs",".vxd",".wsc",".wsf",".wsh"};
+        	boolean flag=true;
+        	for(String s:ignore)
+        	{
+        		if(node.toString().contains(s))
+        		{
+        			 flag=false;
+        			 break;
+        		}
+        	}
+        	if(flag)
+        		fileList.add(generateZipEntry(node.toString()));
+           
         }
 
         if (node.isDirectory()) {
