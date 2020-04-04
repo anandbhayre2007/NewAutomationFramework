@@ -4,14 +4,18 @@
   <test name="Test(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="com.tricentis.automation.scripts.fieldVerification.Automobile_EnterVehicleDataPageTests">
+      <class name="com.tricentis.automation.scripts.fieldVerification.HomePageTests">
         <methods>
+          <include name="verifyMotorCyclelink"/>
           <include name="suiteInitializer"/>
+          <include name="verifyAutomationlink"/>
+          <include name="verifyTrucklink"/>
           <include name="initialize"/>
-          <include name="verifyEnginePerformanceInputbox"/>
+          <include name="verifyCamperlink"/>
+          <include name="teardown"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.tricentis.automation.scripts.fieldVerification.Automobile_EnterVehicleDataPageTests -->
+      </class> <!-- com.tricentis.automation.scripts.fieldVerification.HomePageTests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
